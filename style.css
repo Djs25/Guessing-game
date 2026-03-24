@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "LowresPixel";
+  src: url("./font/LowresPixel-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("./images/172.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "LowresPixel", sans-serif;
+}
+
+.game-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(17, 43, 52, 0.35);
+}
+
+.game {
+  width: 650px;
+  max-width: 92vw;
+  padding: 28px;
+  background: rgba(49, 95, 109, 0.9);
+  border: 4px solid #e3c55d;
+  box-shadow:
+    0 0 0 6px rgba(29, 63, 75, 0.9),
+    0 0 24px rgba(0, 0, 0, 0.35);
+  color: #f3cc5d;
+}
+
+.game-title {
+  text-align: center;
+  padding: 18px 12px;
+  margin-bottom: 24px;
+  background: rgba(79, 124, 136, 0.9);
+  border: 3px solid #e0c35b;
+}
+
+.game-title h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 3px;
+  color: #f3cc5d;
+}
+
+
+.instructions {
+  margin-bottom: 24px;
+  padding: 18px;
+  text-align: center;
+  background: rgba(35, 76, 89, 0.88);
+  border: 3px dotted #e3c55d;
+}
+
+.instructions p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #f7d76d;
+}
+
+.button-container {
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  font-family: "LowresPixel", sans-serif;
+  font-size: 26px;
+  padding: 14px 30px;
+  border: 3px solid #1d3f4b;
+  background: #68c766;
+  color: #183b2c;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: inset -3px -3px 0 rgba(9, 9, 9, 0.25);
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
